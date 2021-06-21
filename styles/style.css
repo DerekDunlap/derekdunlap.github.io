@@ -4,6 +4,41 @@ html {
 	background-color: #002145
 }
 
+/*Menu Bar icon*/
+.container{
+  display: inline-block;
+  float: right;
+  margin: 10px 10px 100px;
+  cursor: pointer;
+}
+
+/*Menu Bar icon*/
+.bar1, .bar2, .bar3{
+  width: 35px;
+  height: 5px;
+  background-color: #64FFDA;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/*Menu Bar icon: Handles bar1 animations*/
+.change .bar1{
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/*Menu Bar icon: Handles bar2 */
+.change .bar2{
+  opacity: 0;
+}
+
+/*Menu Bar icon: Handles bar3 animations*/
+.change .bar3{
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8x, -8px);
+}
+
+
 h1{
   display: flex;
   color: #64FFDA;
@@ -34,8 +69,6 @@ img{
 	width: 400px;
 	height: 500px;
 	border-radius: 2%;
-  /*border: 3px solid #64FFDA;
-  z-index: -1;*/
 }
 
 .imgShape{

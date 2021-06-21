@@ -1,12 +1,16 @@
 let myImage=document.querySelector('img');
 
-myImage.onclick=function(){
+/*myImage.onclick=function(){
 	let mySrc=myImage.getAttribute('src');
 	myImage.setAttribute('src','images/ProfilePic.jpg');
-}
+}*/
 
 let myButton=document.querySelector('button');
 let myHeading=document.querySelector('h1');
+
+function myFunction(x){
+  x.classList.toggle("change");
+}
 
 /*function setUserName(){
 	let myName=prompt('Please enter your name: ');
