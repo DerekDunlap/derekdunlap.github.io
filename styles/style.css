@@ -1,0 +1,49 @@
+html {
+	font-size: 20px; /* px means "pixels": the base font size is now 10 pixels high  */
+	font-family: 'Ubuntu Mono', monospace; /* this should be the rest of the output you got from Google fonts */
+	background-color: #002145
+}
+
+h1{
+  display: flex;
+  color: #64FFDA;
+  align-items: center;
+  position: relative;
+  margin: 30px 25px 40px;
+  width: 100%;
+  font-size: clamp(26px,5vw);
+  white-space: nowrap;
+}
+
+p{
+  display: block;
+  color: #CCD6F6;
+  align-items: center;
+  position: relative;
+  margin: 25px 25px 50px;
+  width: 100%;
+  font-size: clamp(14px,5vw);
+  line-height: 1.5;
+  white-space: normal;
+}
+
+img{
+	display: block;
+  margin: 0px 100px 40px 100px;
+	float: right;
+	width: 400px;
+	height: 500px;
+	border-radius: 2%;
+  /*border: 3px solid #64FFDA;
+  z-index: -1;*/
+}
+
+.imgShape{
+  float: right;
+  width: 400px;
+  height: 500px;
+  shape-outside: inset(20px 50px 10px 0 round 50px) margin-box;
+  border: 3px solid #64FFDA;
+  border-radius: 2%;
+  margin: 50px 100px 25px -450px;
+}
